@@ -14,22 +14,22 @@ body {
 }
 
 #main {
-  margin: 3rem 1rem;
+  margin: 1rem 1rem;
   padding: 1.5rem;
   border-radius: 1rem;
-  background: rgba(102, 102, 0, 0.25);
+  background: rgba(255,215, 0, 0.25);
 }
 
 @media (max-width: 480px) {
   #main {
     margin: 0;
-    background: rgba(102, 102, 0, 0.125);
+    background: rgba(255, 215, 0, 0.125);
   }
 }
 
 h1 {
   font-size: 5rem;
-  background-color: rgba(102, 102, 0, 0.5);
+  background-color: rgba(218,165,32);
   border-radius: 1rem;
   margin-top: 0;
   margin-bottom: 0;
