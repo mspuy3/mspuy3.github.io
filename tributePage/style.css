@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
 html{
-  font-size: 10px;
+  font-size: 2vw;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+@media (max-width: 1080px) {
+  html{
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 720px) {
+  html{
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  html{
+    font-size: 3.5vw;
+  }
+}
 
 body {
   font-family: 'STIX Two Math', serif;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 2.0;
   text-align: center;
   color: #000066;
@@ -14,48 +32,45 @@ body {
 }
 
 #main {
-  margin: 1rem 1rem;
+  margin: 1rem 5rem;
   padding: 1.5rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background: rgba(255,215, 0, 0.25);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1080px) {
+  #main {
+    margin: 1rem 3rem;;
+  }
+}
+
+@media (max-width: 720px) {
   #main {
     margin: 0;
+    padding: 1rem;
     background: rgba(255, 215, 0, 0.125);
   }
 }
 
 h1 {
-  font-size: 5rem;
-  background-color: rgb(218,165,32);
-  border-radius: 1rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 2rem;
+  color: #000066;
+  background-color: rgba(218,165,32, 0.5);
+  border-radius: 2rem;
+  margin: 0 auto 1rem auto;
+  max-width: 75%;
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 3rem;
-    line-height: 1.25;
-  }
+h1:hover {
+  background-color: #000066;
+  color: rgba(218,165,32)
 }
 
 #subtitle{
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-@media (max-width: 480px) {
-  #subtitle {
-    font-size: 2rem;
-    line-height: 1.25;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
 
 #img-div {
@@ -68,30 +83,29 @@ img {
   display: block;
   height: auto;
   margin: 0 auto;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 #img-caption {
   margin: 1rem;
-  font-size: 2rem;
   line-height:1.5;
 }
 
 @media (max-width: 480px) {
-  #img-caption {
-    font-size: 1.5rem;
+  img {
+    max-width: 50%;
   }
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
-@media (max-width: 480px) {
-  h2 {
-  font-size: 2rem;
-  }
+@counter-style fire-emoji {
+  system: cyclic;
+  symbols: "📘";
+  suffix: " ";
 }
 
 ul {
@@ -99,13 +113,7 @@ ul {
   text-align: left;
   line-height: 1.5;
   margin: 0 auto 3rem auto;
-  list-style-type: circle;
-}
-
-@media (max-width: 480px) {
-  ul {
-  font-size: 1.5rem;
-  }
+  list-style-type: fire-emoji;
 }
 
 li {
@@ -114,10 +122,15 @@ li {
 
 blockquote {
   font-style: italic;
-  text-align: justify;
+  font-size: 1.5rem;
   line-height: 1.25;
   max-width: 75%;
   margin: 0 auto 3rem auto;
+  background-color: #000066;
+  padding: 1rem;
+  background-color: rgba(218,165,32, 0.5);
+  border-radius: 2rem;
+  
 }
 
 a {
