@@ -71,16 +71,12 @@ h1:hover {
 
 #subtitle{
     line-height: 1rem;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 #subtitle:hover {
-  line-height: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-shadow: 0 0 3px #888888;
+  font-weight: bold;
 }
+
 
 #img-div {
   padding: 0;
