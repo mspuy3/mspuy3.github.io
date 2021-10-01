@@ -1,0 +1,203 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 2.25vmin;
+ }
+
+body {
+   background-color: #2a2a2a;
+   
+}
+
+#body-container {
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   grid-template-areas: "side-bar sections-container";
+   margin: 1rem;
+   
+   
+   
+}
+
+/*sidebar*/
+
+#side-bar{
+   width: 20rem;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+   #portrait {
+      width: 15rem;
+      border-radius: 50%;
+      box-shadow: 0 0 0.125rem black;
+      transition: width 0.5s;
+   }
+
+   #portrait:hover {
+      width: 18rem;
+   }
+
+   #main-title-container {
+      margin: 1rem 0;
+   }
+
+      #main-title {
+         font-size: 1.75rem;
+         font-weight: bold;
+         color: maroon;
+         text-shadow: 0 0 0.125rem black;
+         transition: color 0.25s;
+      }
+
+         #main-title:hover {
+            color: white;
+            
+         }
+
+   #links-container {
+      
+      display: flex;
+      flex-direction: column;
+   }
+
+      .nav-link {
+         background-color: maroon;
+         padding: 1rem 0.5rem;
+         margin-bottom: 0.5rem;
+         text-decoration: none;
+         color: white;
+         font-size: 1.25rem;
+         box-shadow: 0 0 0.125rem black;
+         transition: border 0.25s;
+      }
+
+         .nav-link:hover {
+            color: goldenrod;
+            border: 0.25rem solid maroon;
+            text-shadow: 0 0 0.125rem black;
+         }
+
+         .nav-link:active {
+            color: goldenrod;
+            border: none;
+         }
+
+
+
+
+
+/*main-content*/
+
+#sections-container {
+   padding: 0 1rem;
+   overflow-y: scroll;
+}
+
+         /* Hide scrollbar for Chrome, Safari and Opera 
+         #sections-container::-webkit-scrollbar {
+            display: none;
+         }*/
+
+         /* Hide scrollbar for IE, Edge and Firefox
+         #sections-container {
+         -ms-overflow-style: none;  
+         scrollbar-width: none;  
+         }*/
+
+   #summary{
+      color:black;
+      padding: 1.5rem;
+      background-color: lightgray;
+      box-shadow: 0 0 0.125rem black;
+      transition: box-shadow 0.5s;
+      transition: background-color 0.5s;
+      margin-bottom: 1rem;
+   }
+
+      #summary:hover {
+         background-color: white;
+         box-shadow: 0 0 0.5rem black;
+      }
+
+      #summary p{
+         transition: font-size 0.5s;
+      }
+
+      #summary p:hover {
+         font-size: 1.5rem;
+      }
+
+   .section-header{
+      background-color: maroon;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      box-shadow: 0 0 0.125rem black;
+   }
+
+   .section-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 1rem 0;
+   }
+
+      .section-contents{
+         width: 32%;
+         background-color: lightgray;
+         box-shadow: 0 0 0.125rem black;
+         transition: box-shadow 0.25s;
+         transition: font-weight 0.5s;
+      }
+            .section-contents:hover {
+               background-color: white;
+               box-shadow: 0 0 0.5rem black;
+               font-weight: bold;
+            }
+            .experience-contents {
+               width: 23%;
+            }
+
+         .content-title{
+            background-color: maroon;
+            color: white;
+            padding: 1rem;
+            min-height: 5rem;
+            text-align: center;
+         }
+
+                  #trg-title{
+                     background-color: darkgoldenrod;
+                  }
+
+                  #mc-title{
+                     background-color: navy;
+                  }
+
+                  #pmil-title{
+                     background-color: darkmagenta;
+                  }
+
+                  #jh-title{
+                     background-color: darkgreen;
+                  }
+
+         .content-proper{
+            padding: 1rem;
+            text-align: center;
+         }
+
+                  .experience-position {
+                     font-weight: bold;
+                     min-height: 2rem;
+                  }
+                  .experience-date {
+                     text-decoration: underline;
+                     margin: 0.5rem 0;
+                  }
+                  /*.experience-description {}*/
+
