@@ -6,7 +6,8 @@
  }
 
 body {
-   background-color: #2a2a2a;
+   background-color: #FAF9F6;
+   overflow: hidden; 
    
 }
 
@@ -14,10 +15,10 @@ body {
    display: grid;
    grid-template-columns: 1fr 4fr;
    grid-template-areas: "side-bar sections-container";
-   margin: 1rem;
-   
-   
-   
+   padding: 1rem;
+   height: 100vh;
+   overflow: hidden;
+    
 }
 
 /*sidebar*/
@@ -48,14 +49,9 @@ body {
          font-size: 1.75rem;
          font-weight: bold;
          color: maroon;
-         text-shadow: 0 0 0.125rem black;
+         text-shadow: 0 0 0.0625rem black;
          transition: color 0.25s;
       }
-
-         #main-title:hover {
-            color: white;
-            
-         }
 
    #links-container {
       
@@ -76,7 +72,7 @@ body {
 
          .nav-link:hover {
             color: goldenrod;
-            border: 0.25rem solid maroon;
+            border: 0.5rem solid maroon;
             text-shadow: 0 0 0.125rem black;
          }
 
@@ -92,7 +88,7 @@ body {
 /*main-content*/
 
 #sections-container {
-   padding: 0 1rem;
+   padding: 1rem;
    overflow-y: scroll;
 }
 
@@ -110,7 +106,7 @@ body {
    #summary{
       color:black;
       padding: 1.5rem;
-      background-color: lightgray;
+      background-color: white;
       box-shadow: 0 0 0.125rem black;
       transition: box-shadow 0.5s;
       transition: background-color 0.5s;
@@ -118,12 +114,13 @@ body {
    }
 
       #summary:hover {
-         background-color: white;
+         background-color: #F5F5F5;
          box-shadow: 0 0 0.5rem black;
       }
 
       #summary p{
          transition: font-size 0.5s;
+         font-size: 1.5rem;
       }
 
       #summary p:hover {
@@ -131,12 +128,12 @@ body {
       }
 
    .section-header{
-      background-color: maroon;
+      
       text-align: center;
       padding: 1rem;
       font-size: 1.5rem;
-      color: white;
-      box-shadow: 0 0 0.125rem black;
+      color: maroon;
+      /*box-shadow: 0 0 0.125rem black;*/
    }
 
    .section-container{
@@ -148,13 +145,13 @@ body {
 
       .section-contents{
          width: 32%;
-         background-color: lightgray;
+         background-color: white;
          box-shadow: 0 0 0.125rem black;
          transition: box-shadow 0.25s;
          transition: font-weight 0.5s;
       }
             .section-contents:hover {
-               background-color: white;
+               background-color: #F5F5F5;
                box-shadow: 0 0 0.5rem black;
                font-weight: bold;
             }
@@ -201,3 +198,23 @@ body {
                   }
                   /*.experience-description {}*/
 
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: maroon; 
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: maroon; 
+ }
