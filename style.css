@@ -18,6 +18,7 @@ body{
   width: 100%;
   background-color: maroon;
   height: auto;
+  box-shadow: 0 0 0.25rem 0.125rem black;
 }
 
 #navbar-container ul{
@@ -61,7 +62,7 @@ main{
 #welcome-section{
   height: 100vh;
   background-color: gray;
-  padding: 20% 15%;
+  padding: 15% 15%;
 }
 
 #welcome-section-container{
@@ -71,10 +72,24 @@ main{
   color: maroon;
   font-size: 5em;
 }
-#welcome-section-subtitle{
+#welcome-section-subtitle {
   color: maroon;
   font-size: 2.5em;
 }
+
+#cv-link{
+  color: maroon;
+  font-size: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  #cv-link:hover {
+    color: goldenrod;
+    font-size: 0.5em;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 
 #projects{
   height: auto;
