@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="styles-todolist.css">
+   <link rel="stylesheet" href="styles-final.css">
+
+   <title>Momentum Clone</title>
+</head>
+
+<body>
+
+   <div id="name-input-container"> 
+      <input type="text" id="name-input" placeholder="Your name here..." required></input>
+      <button id="name-input-button">Let's Start!</button> 
+   </div>
+
+   <div id="page-container">
+      
+      <div id="name-container">
+         <p>Hi, <span id='name'></span>!</p>
+      </div>
+
+      <div id="timedate-container">
+
+         <p>Today is <br> <span id='date'></span></p>
+
+         <p>The time is <br> <span id='clock'></span></p>
+
+      </div>
+
+
+      <div id="quote-container"><p id='quote'></p></div>
+
+      <div id="focus-container">Your focus of the day: <p id='focus'>not yet set.</p></div>
+
+      
+
+      <div id="new-focus-container">
+         <input type="text" id="set-focus-input" placeholder="Set focus here..." required></input>
+         <button id="set-focus-button">Set Focus</button> 
+      </div>
+
+      <div id="new-quote-container">
+         <input type="text" id="add-quote-input" placeholder="Add quote here..." required></input>
+         <div id="new-quote-buttons">
+         <button id="add-quote-button">Add Quote</button> 
+         <button id="show-added-button">Show Added</button>
+         <button id="reset-list-button">Reset List</button>
+         </div>
+      </div>
+
+      <button id="hamburger"><i class="fa fa-bars"></i></button>
+
+      <div id="buttons-container">
+         <button id="name-change-button" >Change Name</button> 
+         <button id="next-quote-button">Next Quote</button>
+         <button id="new-quote-button">Add Quote</button>
+         <button id="new-focus-button">New Focus</button>
+         <button id="clear-focus-button">Clear Focus</button>
+      </div>
+
+
+      <button id="show-todo-button">Show To-Do</button>
+
+      <div id="todo-container">
+
+         <div id="todo-main-container">
+        
+            <div id="todo-input-container">
+                <input id="todo-input" type="text" placeholder="Add your To-do here" value="">
+                <button id="todo-input-button">Add</button>
+            </div>
+            
+            <div id="todo-list-container"></div>
+    
+            <button id="todo-clear-button">Clear all To-do</button>
+    
+        </div>
+
+      </div>
+
+   </div>
+
+</body>
+
+<script src="script-namegreet.js"></script>
+<script src="script-timedate.js"></script>
+<script src="script-quotes.js"></script>
+<script src="script-focus.js"></script>
+<script src="script-todolist.js"></script>
+<script src="script-buttons.js"></script>
+
+
+</html>

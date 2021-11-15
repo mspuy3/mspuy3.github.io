@@ -1,102 +1,180 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="An evolving online portfolio of my web development skills.">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Software, Development, developer">
-  <meta name="author" content="Michael Siemens P. Uy">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Michael Siemens Uy</title>
-  <link rel="icon" href="img/personal_logo.png" type = "image/x-icon">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+
+   <link rel="icon" href="img/logo1.png" type = "image/x-icon">
+   <title>Michael Siemens Uy (Avion)</title>
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<body>
-  
-  <div id="navbar-container"><nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#profile-section">Contact</a></li>
-      </ul>  
-  </nav></div>
-  
-  <div id="main-container"><main>
+   
+   <nav id="navbar">
+
+      <a href="index.html">
+         <img src="img/logo1.png" alt="Personal Logo" id="navbar-logo">
+      </a>
       
-      <section id="welcome-section">
-      
-          <div id="welcome-section-container">  
-            <h1 id="welcome-section-title">Hey, I'm MU!</h1>
-            <p id="welcome-section-subtitle">I am an aspiring web developer.<br> You can see my projects below.<br> <a href="./curriculumVitae/index.html" id ="cv-link" target="_blank">If you want to learn more about me, click here.</a></p>
-          </div>
-        
-      </section>
-      
-      <section id="projects">
-        
-          <div id="projects-section-container">
+      <ul class="navbar-list">
+         <li class="navbar-links"><a href="#about-me-container">About Me</a></li>
+         <li class="navbar-links"><a href="#learning-projects-container">Learning Projects</a></li>
+         <li class="navbar-links"><a href="#contact-information-container">Contact Information</a></li>
+      </ul>
+
+   </nav>
+
+
+   <main>
+
+      <section id="about-me"> <div class="section-container" id="about-me-container">
             
-            <h1 id="projects-section-title">My practice projects so far...</h1>
-            
-            <div id="indiv-projects-container">
-              <a href="./tributePage/index.html" class="project-links" target="_blank">
-                <div class="project-tile">A Tribute Page</div>
-              </a>
-              <a href="./formPage/index.html" class="project-links" target="_blank">
-                <div class="project-tile">A Survey Form</div>
-              </a>
-              <a href="https://codepen.io/mspuy3/pen/powgZdG" class="project-links" target="_blank">
-                <div class="project-tile">A Landing Page</div>
-              </a>
-              <a href="https://codepen.io/mspuy3/pen/QWgNNdG" class="project-links" target="_blank">
-                <div class="project-tile">A Technical Documentation</div>
-              </a>
-              <a href="https://codepen.io/mspuy3/pen/BaZjEPg" class="project-links" target="_blank">
-                <div class="project-tile">A One-Page Sample</div>
-              </a>
-              <a href="./simpleCalculatorWebApp/index.html" class="project-links" target="_blank">
-                <div class="project-tile">A Simple Calculator</div>
-              </a>
-              <a href="./simpleCounterWebApp/index.html" class="project-links" target="_blank">
-                <div class="project-tile">A Simple Counter</div>
-              </a>
-            </div>
-          
-        </div>
-        
-      </section>
-      
-      <section id="profile-section">
-        
-          <div id="profile-section-container">
-            <h1 id="profile-section-title">You can find me here!</h1>
-            <div id="profile-links-container">
-              <ul>
-                <li><a href="https://codepen.io/mspuy3" class="profile-links" id="profile-link" target="_blank">Codepen</a></li>
-                <li><a href="https://github.com/mspuy3" class="profile-links" target="_blank">GitHub</a></li>
-                <li><a href="https://www.freecodecamp.org/mspuy3" class="profile-links" target="_blank">freeCodeCamp</a></li>
-                <li><a href="https://replit.com/@mspuy3" class="profile-links" target="_blank">Replit</a></li>
-                <li><a href="https://www.linkedin.com/in/michaelspuy/" class="profile-links" target="_blank">LinkedIn</a></li>
-              </ul>
+            <div id="about-me-portrait">
+               <img src="img/portrait-vector.png" id="portrait" alt="Vector portrait here.">
             </div>
             
-          </div>
-        
-        <footer>
-          <br><br><br>
-          <div id="footer-container">
-          This is a learning project that is continously improved over time. :)
-          </div>
-        </footer>
-        
-      </section>
+            <div id="about-me-text">
+               <h1 id="hi-text">Hi! <br> I'm M.U.</h1>
+               <p id="im-text">I'm a Web Developer in the making! 🚀</p>
+               <div id="loading-bar"></div>
+            </div>
+
+      </div> </section>
       
-  </main></div>
-</body>
+
+      <section id="learning-projects"> <div class="section-container" id="learning-projects-container">
+         
+            <h2 id="learning-projects-title">Here are my Learning Projects!</h2>
+            <div id="individual-projects-container">
+               
+               <a href="tributePage/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Tribute Page</p>
+                     <p class="project-description">A simple webpage dedicated to one of the greatest mathematician ever. My very first web development project.</p>
+                  </div>
+               </div>
+               </a>
+               
+               <a href="formPage/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Survey Form</p>
+                     <p class="project-description">A simple webpage that shows some of the common HTML form functionalities. Shows some of my early attempts in mastering flexbox.</p>
+                  </div>                     
+               </div>
+               </a>
+
+               <a href="chessFlex/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Chessboard with CSS Flexbox</p>
+                     <p class="project-description">A simple webpage where all 64 board squares are always be visible (Zoomed in or out, no scrolling regardless of monitor size). </p>
+                  </div>               
+               </div>
+               </a>
+               
+               <a href="chessGrid/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Chessboard with CSS Grid</p>
+                     <p class="project-description">A simple webpage where all 64 board squares are always be visible (Zoomed in or out, no scrolling regardless of monitor size). </p>
+                  </div>               
+               </div>
+               </a>
+               
+               <a href="productLandingPage2/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Product Landing Page</p>
+                     <p class="project-description">A simple, responsive webpage that shows some intermediate-level applications in CSS. A re-imagination of an existing website. </p>
+                  </div>               
+               </div>
+               </a>
+
+               <a href="momentumApp/index.html" target="_blank">
+                  <div class="individual-project-box">
+                     <div class="individual-project-img">Photo Here</div>
+                     <div class="individual-project-text">
+                        <p class="project-title">Momentum Web App</p>
+                        <p class="project-description">A simple web app mimicking the famous Momentum extension app for Chromium-based browsers. Uses Local Storage to store information such as Name, Focus of the Day, Quotes, and To-do items.</p>
+                     </div>               
+                  </div>
+               </a>
+
+               <a href="ticTacToe/index.html" target="_blank">
+                  <div class="individual-project-box">
+                     <div class="individual-project-img">Photo Here</div>
+                     <div class="individual-project-text">
+                        <p class="project-title">Tic-Tac-Toe</p>
+                        <p class="project-description">A simple web-based implementation of the classic tic-tac-toe. Uses a functional approach on JavaScript to run the game mechanics.</p>
+                     </div>               
+                  </div>
+               </a>
+
+               <!-- <div class="individual-project-box not-done">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Technical Documentation</p>
+                     <p class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nostrum dolorem, porro cum libero corporis doloremque corrupti optio. </p>
+                  </div>               
+               </div> -->
+               
+               <a href="simpleCounterWebApp/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Simple Counter</p>
+                     <p class="project-description">A simple counter web app that shows my early forays with JavaScript. </p>
+                  </div>               
+               </div>
+               </a>
+
+               <a href="simpleCalculatorWebApp/index.html" target="_blank">
+               <div class="individual-project-box">
+                  <div class="individual-project-img">Photo Here</div>
+                  <div class="individual-project-text">
+                     <p class="project-title">Simple Calculator</p>
+                     <p class="project-description">A simple calculator web app that shows my early forays with JavaScript. </p>
+                  </div>               
+               </div>
+               </a>
+
+            </div>
+         
+      </div> </section>
+      
+      <section id="contact-information"> <div class="section-container" id="contact-information-container">
+         
+         <!-- <div id="moving-block-container"><div id="moving-block">👋</div></div> -->
+         <h2 id="contact-information-title">You can find me at the following links!</h2>
+         <div id="contact-cards-container">
+            <a href="https://www.linkedin.com/in/michaelspuy/" target="_blank"><div class="contact-card" id="linkedin-div">LinkedIn</div></a>
+            <a href="https://github.com/mspuy3" target="_blank"><div class="contact-card" id="github-div">GitHub</div></a>
+         </div>
+         
+         <h2 id="footerish">This page and the linked learning projects are continuously improved. Comeback once and a while for some new stuff that I learn and implement as a budding web developer! 😃</h2> 
+         
+      </div> </section>
+
+   </main>
+   
+   
+   
 
 </body>
 </html>

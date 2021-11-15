@@ -1,0 +1,147 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@use url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+$main-dark-color: #2A0944;
+$main-light-color: #3B185F;
+$accent-pink-color: #A12568;
+$tertiary-yellow-color: #FEC260;
+
+$large-font: 5vmin;
+$medium-font: 4vmin;
+$small-font: 3vmin; 
+
+$shadow-details: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+@mixin containers {
+   background-color: $tertiary-yellow-color;
+   box-shadow: $shadow-details;
+}
+
+@mixin flexed-containers {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+body {
+   background-color: whitesmoke; 
+}
+
+#main{
+   margin: 5% 25%;
+   
+   background-color: none;
+   font-family: 'Inconsolata', monospace;
+}
+
+#title-container{
+   @include containers();
+   text-align: center;
+   padding: 2%;
+   margin-bottom: 2%;
+   #title{
+      color: $main-dark-color;
+      font-size: $large-font;
+   }
+   #description{
+      color: $accent-pink-color;
+      font-size: $small-font;
+   }
+}
+
+#survey-form{
+   height: max-content;
+   padding: 1%;
+   @include containers();
+   @include flexed-containers();
+   flex-direction: column;
+
+   & > * {
+      border: 1px solid red;
+      border: none;
+      margin: 0.5vmin; 
+   }
+   & > div {
+      @include flexed-containers();
+      align-items: center;
+   }
+   & > div > * {
+      margin: 0.25vmin;
+   }
+
+   input[type=radio], input[type=checkbox] {
+      box-shadow: none;
+   }
+
+   input, select {
+      flex-grow: 1;
+      border: none;
+      box-shadow: $shadow-details;
+   }
+   
+   label {
+      font-weight: bold;
+      color: $main-dark-color;
+   }
+}
+
+#age-email-container{
+   & > div {
+      border: 1px solid blue;
+      border: none;
+      flex-grow: 1;
+      @include flexed-containers();
+   }
+   input {
+      flex-basis: 1;
+   }
+   label {
+      margin-right: 5%;
+   }
+}
+
+#radio-checkbox-container {
+   @include flexed-containers();
+   align-self: center;
+   align-items: start;
+   border: 1px solid red;
+}
+
+#textarea-container{
+   width: 100%;
+   @include flexed-containers();
+
+   & > * {
+      margin: 1%;
+   }
+   textarea {
+      width: 100%;
+      box-shadow: $shadow-details;
+      border: none;
+      padding: 1%;
+   }
+}
+
+#submit-container{
+   align-self: center;
+}
+
+#submit{
+   padding: 10%;
+   background-color: $accent-pink-color;
+   color: $tertiary-yellow-color;
+   font-size: $small-font;
+   font-family: 'Inconsolata', monospace;
+   &:hover{
+      background-color: $main-dark-color;
+   }
+   &:active{
+      background-color: $tertiary-yellow-color;
+      color: $accent-pink-color;
+      font-weight: bold;
+   }
+}
